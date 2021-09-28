@@ -1,6 +1,9 @@
+import requests
 import time
-import webbrowser
+
+BASE='http://127.0.0.1:5000/'
 
 while True:
-	webbrowser.open('http://127.0.0.1:5000/send_all')
+	response=requests.get(BASE+'all-emails')
+	print('email sent!')
 	time.sleep(60*60*24)
