@@ -25,9 +25,8 @@ def send_email(content, now, TO):
 	
 	SERVER='smtp.gmail.com'
 	PORT=587
-	FROM='gauravtripathi725@gmail.com'
-	# TO= ['tripathi.rksaurav@gmail.com','gauravtripathii7979@gmail.com']
-	PASS='gauravtripathii'
+	FROM='gauravtripathii7979@gmail.com'
+	PASS=''#write your password here!
 	
 	msg = MIMEMultipart()
 	msg['SUBJECT'] = 'Top Stories  ' + str(now.day) + str(now.year)
